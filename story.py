@@ -4,7 +4,7 @@ def main():
     adjetive = input("Tell me an adjetive:")
     goal = input("What is a goal you have:")
 
-    print(f"Hello, {name}!")
+    print(f"Hello, {name}!", end="\n\n")
     print("This is your story:")
     print(f" When I was in the school I {adjetive} and didnt think to much about it")
     print(f" but when I looked at my {color} friend I remembered I wanted to {goal}")
