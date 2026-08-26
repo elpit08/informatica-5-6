@@ -5,16 +5,16 @@ def main():
     operation = equation[1]
     number2 = float(equation[2])
 
-    if operation == +:
+    if operation == '+':
         print(number1 + number2)
 
-    elif operation == -:
+    elif operation == '-':
         print(number1 - number2)
 
-    elif operation == *:
+    elif operation == '*':
         print(number1 * number2)
 
-    elif operation == /:
+    elif operation == '/':
         print(number1 / number2)
 
 
