@@ -32,14 +32,29 @@ def main():
                 anwser = input("Is the choice okey? ")
 
             elif restaurant_type == 'mexican':
+                mexican = random.randint(10,14)
+                print(restaurants[mexican])
+                anwser = input("Is the choice okey? ")
 
             elif restaurant_type == 'hamburger':
+                hamburger = random.randint(15,17)
+                print(restaurants[hamburger])
+                anwser = input("Is the choice okey? ")
 
             elif restaurant_type == 'mariscos':
+                mariscos = random.randint(18,19)
+                print(restaurants[mariscos])
+                anwser = input("Is the choice okey? ")
 
             elif restaurant_type == 'pollo':
+                pollo = random.randint(20,25)
+                print(restaurants[pollo])
+                anwser = input("Is the choice okey? ")
 
             elif restaurant_type == 'otro':
+                otro = random.randint(26,30)
+                print(restaurants[otro])
+                anwser = input("Is the choice okey? ")
 
             else:
                 print("Selection not valid")
