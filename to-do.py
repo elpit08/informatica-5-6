@@ -19,11 +19,12 @@ def main():
             print(len(to_do))
             print(to_do)
             completed_tasks = int(input("How many task did you complete: "))
-            
-            while
+            taskwriten = 0
+            while taskwriten < completed_tasks:
 
-            complete = input("What task did you complete: ")
-            to_do.remove(complete)
+                complete = input("What task did you complete: ")
+                to_do.remove(complete)
+                taskwriten += 1
 
         if command == 'exit':
             break
