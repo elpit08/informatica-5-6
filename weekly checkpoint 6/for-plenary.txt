@@ -2,4 +2,4 @@ while loop: is a function in python that is used to create a loop that can be in
 
 for loop: is a type of loop which is used for list since the values moves for each value of a list
 
-comparing: The while loop is used to create infinite of specific conditions that can be met, and the for loop is used in list or to reapeat something certain number of times just like lists
+comparing: The while loop is used to create infinite of specific conditions that can be met, and the for loop is used in list or to reapeat something certain number of times just like lists, but both are loops and are used to repeat actions
