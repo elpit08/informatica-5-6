@@ -4,9 +4,9 @@ def average_value(a, b, c):
 
 def main():
     print("Calculate the average")
-    num1 = int(input("What is the first value: "))
-    num2 = int(input("What is the second value: "))
-    num3 = int(input("What is the last value: "))
+    num1 = float(input("What is the first value: "))
+    num2 = float(input("What is the second value: "))
+    num3 = float(input("What is the last value: "))
 
     average_value(num1,num2,num3)
 
