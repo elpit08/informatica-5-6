@@ -38,11 +38,13 @@ into normal numbers(decimal numbers)
 
         for _ in range(len(list_binary)):
             if list_binary[_] == '1' or list_binary[_] == '0':
+                binary_to_decimal(user_convertion)
                 repeat = False
+                break
 
 
 
-    binary_to_decimal(user_convertion)
+    #binary_to_decimal(user_convertion)
 
 
 
