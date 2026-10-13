@@ -1,3 +1,26 @@
+import random
+def start_game():
+    with open("corpus_for_hangman.txt") as word_list:
+        content = word_list.read().splitlines()
+
+        the_one =random.choice(content)
+        print(the_one)
+
+def main():
+    start_game()
+
+if __name__=="__main__":
+    main()
+
+
+
+
+
+
+
+
+
+
 #def the main function
 #write a print to say welcome to the game
 #create a txt file with all the words
