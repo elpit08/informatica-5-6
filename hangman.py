@@ -3,12 +3,31 @@ def start_game():
     with open("corpus_for_hangman.txt") as word_list:
         content = word_list.read().splitlines()
 
-        the_one =random.choice(content)
-        print(the_one)
+    atttempts = 8
+    the_one =random.choice(content)
+    the_ones_secret = ["_"] * len(the_one)
+    #print(the_one)
+    print(" ".join(the_ones_secret))
+
+    print("Guess the word")
+    while True:
+        guess = input("take a guess: ")
+
+        if len(guess) == 1:
+            break
+        else:
+            print("not a valid guess. Try again")
+
+    for _ in the_one:
+        if guess == _:
+                print(guess)
+        else:
+            print("_ ", end="")
+
+
 
 def main():
     start_game()
-
 if __name__=="__main__":
     main()
 
