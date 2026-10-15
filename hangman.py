@@ -3,26 +3,50 @@ def start_game():
     with open("corpus_for_hangman.txt") as word_list:
         content = word_list.read().splitlines()
 
-    atttempts = 8
-    the_one =random.choice(content)
+    repeated_guess = []
+    attempts = 10
+    the_one =random.choice(content).lower()
     the_ones_secret = ["_"] * len(the_one)
-    #print(the_one)
+    word_counter = the_ones_secret.copy()
+
     print(" ".join(the_ones_secret))
 
     print("Guess the word")
     while True:
-        guess = input("take a guess: ")
+        while True:
+            guess = input("take a guess: ")
 
-        if len(guess) == 1:
+            if guess in repeated_guess:
+                print("Already selected that character")
+
+            if len(guess) == 1:
+                break
+            else:
+                print("not a valid guess. Try again")
+
+        index_replacement = 0
+        for _ in the_one:
+            if guess == _:
+
+                word_counter[index_replacement] = guess
+            index_replacement += 1
+
+        if guess in word_counter:
+            attempts -= 0
+        else:
+            attempts -= 1
+        print(f"attempts remaining: {attempts} ")
+
+        print(" ".join(word_counter))
+        if attempts == 0:
+            print("You lost, bartholomew died :(")
             break
-        else:
-            print("not a valid guess. Try again")
-
-    for _ in the_one:
-        if guess == _:
-                print(guess)
-        else:
-            print("_ ", end="")
+        if word_counter == list(the_one):
+            print("Congratulations you WON !!!!")
+            break
+        repeated_guess.append(guess)
+        print("Used words: ")
+        print(" ".join(repeated_guess))
 
 
 
